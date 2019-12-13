@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Styled TextView - Sample</string>
+    <string name="test_string_with">{blue}{avenir}Hoi{/avenir}{/blue}</string>
+    <string name="test_string_without">Hoi</string>
+</resources>

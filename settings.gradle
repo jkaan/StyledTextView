@@ -1,0 +1,2 @@
+include ':sample', ':styledtextview'
+rootProject.name='Styled TextView - Sample'
