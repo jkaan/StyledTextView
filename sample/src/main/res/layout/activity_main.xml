@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent"
-  tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-  <com.jf.styledtextview.StyledTextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/test_string_with" />
+    <com.jf.styledtextview.StyledTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="40sp"
+        android:text="@string/test_string_with" />
 
-  <com.jf.styledtextview.StyledTextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/test_string_without" />
+    <com.jf.styledtextview.StyledTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="40sp"
+        android:text="@string/test_string_without" />
+
+    <com.jf.styledtextview.StyledTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="40sp"
+        android:text="@string/test_string_with_custom_tag" />
+
+    <com.jf.styledtextview.StyledTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="40sp"
+        android:text="@string/app_name" />
 
 </LinearLayout>
