@@ -1,9 +1,13 @@
 package com.jf.styledtextview
 
 import android.content.Context
+import android.graphics.Typeface
 import android.text.SpannableString
 import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
+import android.text.style.StrikethroughSpan
+import android.text.style.StyleSpan
+import android.text.style.UnderlineSpan
 import androidx.annotation.ColorRes
 import androidx.annotation.FontRes
 import androidx.core.content.ContextCompat
@@ -22,6 +26,22 @@ class SpannableStringBuilder(private val context: Context) {
     }
 
     class SpannableStringBuilderDsl(val builder: SpannableStringBuilder, val context: Context) {
+        fun bold(tag: String) {
+            setSpanForTag(builder, tag, StyleSpan(Typeface.BOLD))
+        }
+
+        fun strikeThrough(tag: String) {
+            setSpanForTag(builder, tag, StrikethroughSpan())
+        }
+
+        fun underline(tag: String) {
+            setSpanForTag(builder, tag, UnderlineSpan())
+        }
+
+        fun italic(tag: String) {
+            setSpanForTag(builder, tag, StyleSpan(Typeface.ITALIC))
+        }
+
         fun color(tag: String, @ColorRes color: Int) {
             setSpanForTag(
                 builder, tag, ForegroundColorSpan(

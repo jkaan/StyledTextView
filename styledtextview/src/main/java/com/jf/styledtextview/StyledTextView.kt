@@ -14,6 +14,7 @@ class StyledTextView @JvmOverloads constructor(
     init {
         constructorCalled = true
     }
+
     override fun setText(text: CharSequence?, type: BufferType?) {
         if (!constructorCalled) {
             super.setText(text, type)
@@ -24,6 +25,10 @@ class StyledTextView @JvmOverloads constructor(
         } else {
             val spannable = SpannableStringBuilder(context)
                 .spannableString(text.toString()) {
+                    bold("b")
+                    underline("u")
+                    strikeThrough("strike-through")
+                    italic("i")
                     StyledTextViewRegistry.colorTags.forEach {
                         color(it.key, it.value)
                     }

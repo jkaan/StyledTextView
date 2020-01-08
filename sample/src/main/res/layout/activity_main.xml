@@ -10,28 +10,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:textSize="40sp"
-        android:text="@string/test_string_with" />
+        android:text="@string/test_string_with"
+        android:textSize="40sp" />
 
     <com.jf.styledtextview.StyledTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:textSize="40sp"
-        android:text="@string/test_string_without" />
+        android:text="@string/test_string_bold_italic_underline_strikethrough"
+        android:textSize="40sp" />
 
     <com.jf.styledtextview.StyledTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:textSize="40sp"
-        android:text="@string/test_string_with_custom_tag" />
+        android:text="@string/test_string_with_custom_tag"
+        android:textSize="40sp" />
 
     <com.jf.styledtextview.StyledTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:textSize="40sp"
-        android:text="@string/app_name" />
+        android:text="@string/app_name"
+        android:textSize="40sp" />
 
 </LinearLayout>
